@@ -1,13 +1,14 @@
-import '@/styles/globals.scss';
-import styles from '@/styles/App.module.scss';
-import Layout from "@/components/Layout";
+import { AppProps } from "next/app";
+import '../styles/globals.scss';
+import styles from '../styles/App.module.scss';
+import Layout from "../components/Layout";
 import ytImg from '../public/youtube.png';
 import Image from "next/image";
 import Head from "next/head";
 
 const fontUrl = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap';
 
-const App = ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }: AppProps) => (
     <Layout>
         <Head>
             <link href={fontUrl} rel="stylesheet"/>

@@ -1,8 +1,14 @@
-import Heading from "@/components/Heading";
-import styles from '@/styles/Socials.module.scss';
+import Heading from "./Heading";
+import styles from '../styles/Socials.module.scss';
 import Head from "next/head";
+import {socialType} from "../types";
+import {FC} from "react";
 
-const Socials = ({ socials }) => {
+type socialsProps = {
+    socials: socialType,
+}
+
+const Socials:FC<socialsProps> = ({ socials }) => {
     const tag = 'h2';
 
     if (!socials) {

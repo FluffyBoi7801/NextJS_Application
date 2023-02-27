@@ -1,6 +1,6 @@
-import styles from '@/styles/Home.module.scss';
-import Socials from '@/components/Socials';
-import Heading from "@/components/Heading";
+import styles from '../styles/Home.module.scss';
+import Socials from '../components/Socials';
+import Heading from "../components/Heading";
 import Head from "next/head";
 
 const mainText = 'Hello world!';

@@ -1,6 +1,12 @@
-import Heading from "@/components/Heading";
+import { FC } from "react";
+import Heading from "./Heading";
+import { contactType } from "../types";
 
-const Contactinfo = ({ contact }) => {
+type contactInfoProps = {
+    contact: contactType,
+}
+
+const ContactInfo:FC<contactInfoProps> = ({ contact }) => {
     const tag = 'h2';
     const { name, email, address } = contact || {};
     const { street, suite, city, zipcode } = address || {};
@@ -25,4 +31,4 @@ const Contactinfo = ({ contact }) => {
 
 }
 
-export default Contactinfo;
+export default ContactInfo;

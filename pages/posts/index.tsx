@@ -1,6 +1,12 @@
-import Heading from "@/components/Heading";
+import { FC } from "react";
+import Heading from "../../components/Heading";
 import Head from "next/head";
 import Link from "next/link";
+import {postType} from "../../types";
+
+type postsTypeProps = {
+    posts: [postType],
+}
 
 export const getStaticProps = async () => {
     const url = 'https://jsonplaceholder.typicode.com/posts';
@@ -18,7 +24,7 @@ export const getStaticProps = async () => {
     }
 };
 
-const Posts = ({ posts }) => {
+const Posts:FC<postsTypeProps> = ({ posts }) => {
 
     return (
         <>

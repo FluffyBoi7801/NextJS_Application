@@ -1,7 +1,8 @@
-import Heading from "@/components/Heading";
-import Navbar from "@/components/Navbar";
+// import Heading from "./Heading";
+import Navbar from "./Navbar";
+import {FC} from "react";
 
-const Header = () => (
+const Header:FC = () => (
     <header>
         {/*<Heading tag={"h3"} text={"Header"}/>*/}
         <Navbar/>
